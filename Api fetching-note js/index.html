@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Data Display - API Fetch Demo</h1>
+
+    <!-- Demo Section 1: Using map() -->
+    <div class="demo-section">
+      <h2>Method 1: Using Array.map()</h2>
+      <div class="method-info">
+        <strong>map()</strong> creates a new array by transforming each element.
+        It returns a new array and doesn't modify the original array.
+        <br>
+        <code>const newArray = array.map(item => transformedItem)</code>
+      </div>
+      <div id="users-map" class="users-container">
+        <div class="loading">Loading users...</div>
+      </div>
+    </div>
+
+    <!-- Demo Section 2: Using forEach() -->
+    <div class="demo-section">
+      <h2>Method 2: Using Array.forEach()</h2>
+      <div class="method-info">
+        <strong>forEach()</strong> executes a function for each element but doesn't return anything.
+        It's used for side effects like DOM manipulation.
+        <br>
+        <code>array.forEach(item => { /* do something */ })</code>
+      </div>
+      <div id="users-forEach" class="users-container">
+        <div class="loading">Loading users...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+
+
+
+

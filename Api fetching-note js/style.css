@@ -1,0 +1,80 @@
+/* General container styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #0078d7;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #005a9e;
+  margin-top: 0;
+}
+
+/* Demo sections */
+.demo-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #fafafa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.demo-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Method info */
+.method-info {
+  background-color: #eef6ff;
+  border-left: 4px solid #0078d7;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+.method-info strong {
+  color: #0078d7;
+}
+
+/* Code styling */
+code {
+  display: block;
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 8px;
+}
+
+/* Loading text */
+.loading {
+  color: #888;
+  font-style: italic;
+}
+
+/* User containers */
+.users-container {
+  border-top: 1px dashed #ccc;
+  padding-top: 10px;
+}
