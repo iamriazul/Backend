@@ -1,0 +1,147 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background: #ffffffcc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Search box — FIX: moved button inside .search-box to match HTML */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.search-box input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 70%;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #6c63ff;
+}
+
+#searchBtn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+#searchBtn:hover {
+  background: #574b90;
+}
+
+/* Loading message */
+#loading {
+  margin-top: 0.5rem;
+  color: #6c63ff;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* Error message */
+#errorMessage {
+  margin-top: 1rem;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Weather info card */
+#weatherInfo {
+  margin-top: 1.5rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+#cityName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.weather-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.detail-item {
+  background: #fff;
+  padding: 0.6rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.detail-item .label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+/* FIX: was "hiden" in original HTML — this class must be "hidden" */
+.hidden {
+  display: none;
+}
