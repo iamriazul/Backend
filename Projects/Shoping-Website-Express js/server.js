@@ -4,14 +4,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Set EJS as the view engine
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Middleware (Only urlencoded is needed for form submission)
+
 app.use(express.urlencoded({ extended: true }));
 
-// Products Data for Shop Page (No database needed as per request)
 const products = [
     { id: 1, name: 'Premium Wireless Headphones', price: 299.99, image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', description: 'Experience pure sound with these high-quality noise-canceling headphones.' },
     { id: 2, name: 'Minimalist Smartwatch', price: 199.50, image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80', description: 'Sleek design combined with ultimate health and fitness tracking features.' },
@@ -21,9 +20,6 @@ const products = [
     { id: 6, name: 'Portable Power Bank', price: 49.99, image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80', description: 'High-capacity fast charging battery pack to ensure you are never out of power.' }
 ];
 
-// --- Routes ---
-
-// Home Page
 app.get('/', (req, res) => {
     res.render('index', { title: 'Home | TechStore' });
 });
@@ -43,11 +39,10 @@ app.get('/contact', (req, res) => {
     res.render('contact', { title: 'Contact Us | TechStore' });
 });
 
-// Contact Page (POST submit) - Simple form submit console logging
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
     
-    // Logging form data to the server console as requested
+    
     console.log(`\n===================================`);
     console.log(`=== New Contact Form Submission ===`);
     console.log(`Name:    ${name}`);
@@ -55,7 +50,7 @@ app.post('/contact', (req, res) => {
     console.log(`Message: ${message}`);
     console.log(`===================================\n`);
     
-    // Render back the contact page with a success flag
+
     res.render('contact', { title: 'Contact Us | TechStore', success: true });
 });
 
