@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Simple Website' %></title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Simple Site</h1>
+            <nav class="space-x-4">
+                <a href="/" class="hover:underline">Home</a>
+                <a href="/about" class="hover:underline">About</a>
+                <a href="/shop" class="hover:underline">Shop</a>
+                <a href="/contact" class="hover:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-6 flex-grow bg-white my-6 shadow rounded">
