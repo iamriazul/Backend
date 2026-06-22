@@ -5,7 +5,7 @@ const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
 const errorMessage = document.getElementById('errorMessage');
 const weatherInfo = document.getElementById('weatherInfo');
-const loading = document.getElementById('loading'); // FIX: now matches the HTML id
+const loading = document.getElementById('loading'); 
 
 function showError(message) {
   errorMessage.textContent = message;
@@ -16,7 +16,7 @@ function hideError() {
   errorMessage.classList.add('hidden');
 }
 
-// FIX: Removed stray text "this is my js code" that was causing a syntax error
+
 function showLoading() {
   loading.classList.remove('hidden');
   weatherInfo.classList.add('hidden');
