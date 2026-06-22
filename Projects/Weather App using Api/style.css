@@ -1,4 +1,4 @@
-/* General reset */
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ h1 {
   color: #333;
 }
 
-/* Search box — FIX: moved button inside .search-box to match HTML */
+
 .search-box {
   display: flex;
   justify-content: center;
@@ -140,8 +140,6 @@ h1 {
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
 }
-
-/* FIX: was "hiden" in original HTML — this class must be "hidden" */
 .hidden {
   display: none;
 }
